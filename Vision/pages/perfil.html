@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../assets/css/perfil.css" />
+    <script src="../assets/js/perfil.js" defer></script>
+    <title>Vision</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <img src="../assets/images/logoAlt.png" width="50" />
+        </li>
+        <li>
+          <a href="main.html">Fazer pedido</a>
+        </li>
+        <li>
+          <a href="perfil.html" class="selected">Meu Perfil</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="card">
+      <div id="container-card">
+        <form id="alterar" method="post">
+          <h3 id="msgWelcome">
+            Olá, seja bem vindo(a) <span id="userName"></span>.
+          </h3>
+          <h4>Confira seus dados atuais</h4>
+
+          <input type="text" name="id" id="id" hidden>
+
+          <label for="name">Seu nome:</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="email">Seu email:</label>
+          <input type="email" id="email" name="email" />
+
+          <h5>Deseja alterar nome, email ou senha atuais?</h5>
+          <label for="password">Senha atual: <span>*</span></label>
+          <input
+            type="password"
+            id="password"
+            class="required"
+            name="password"
+            required
+          />
+
+          <label for="passwordNew">Senha nova:</label>
+          <input type="password" id="passwordNew" name="passwordNew" />
+
+          <label for="passwordConfirmation">Confirmação:</label>
+          <input type="password" id="passwordConfirmation" name="passwordConfirmation" />
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <form id="deletar" method="post">
+          <h6>Quer apagar sua conta?</h6>
+          <button type="submit" id="btnDelete">Deletar conta</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../assets/js/main.js" defer></script>
+    <title>Vision</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <img src="../assets/images/logoAlt.png" width="50" />
+        </li>
+        <li>
+          <a href="main.html" class="selected">Fazer pedido</a>
+        </li>
+        <li>
+          <a href="perfil.html">Meu Perfil</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- tag que serve para fazer a divisão pro conteudo principal -->
+      <div class="carrinhoCard">
+        <div class="headCarrinhoCard">
+          <h2>Carrinho</h2>
+          <button class="btnPedido" onclick="enviarPedido()" >
+            <img src="../assets/images/square-plus-regular.svg" width="20"/>
+             Fazer Pedido / Criar carrinho
+          </button>
+        </div>
+        <div id="respostaPedido"></div>
+      </div>
+
+      <div id="modalItem" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeItem">&times;</span>
+          <h5>Preencha o formulário para adicionar um item</h5>
+          <form id="criarItem" method="post">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="price">Preço</label>
+            <input type="number" name="price" id="price" required />
+
+            <button type="submit">Criar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="itemCard">
+        <div class="headItemCard">
+          <h2>Vitrine</h2>
+          <button id="openModalBtnItem">
+            <img src="../assets/images/square-plus-regular.svg" width="20"/>
+            Criar novo item
+          </button>
+        </div>
+        <div id="container-itens"></div>
+      </div>
+    </main>
+
+  </body>
+
+</html>

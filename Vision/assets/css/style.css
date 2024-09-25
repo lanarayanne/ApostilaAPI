@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+
+body {
+  font-family: "Archivo", sans-serif;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #8000ff;
+}
+
+h6,
+a {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#logo img {
+  width: 100px;
+}
+
+#cadastro {
+  display: flex;
+  flex-direction: column;
+}
+
+#cardCadastro {
+  width: 30em;
+  background-color: #fff;
+  height: 40em;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  animation: slideIn 1s ease-out; /* Aplicando a animação ao carregar a tela */
+}
+
+h1 {
+  text-align: center;
+  color: #0f001f;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button[type="submit"] {
+  width: 20em;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #8000ff;
+  border-radius: 5px;
+  color: #0f001f;
+  font-weight: 600;
+  box-sizing: border-box;
+  transition: 0.8s;
+}
+
+input {
+  margin-top: 0.5em;
+}
+
+label {
+  margin-top: 0.8em;
+  color: #0f001f;
+}
+
+button[type="submit"] {
+  background-color: #8000ff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  background-color: #ebd7ff;
+}
